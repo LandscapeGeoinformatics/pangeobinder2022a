@@ -1,4 +1,4 @@
-name: Test Repo2Docker Binder Cache
+name: Repo2Docker Binder Cache
 # on: push
 on:
   workflow_dispatch:
@@ -18,5 +18,6 @@ jobs:
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        IMAGE_NAME: "allixender/pangeobinder2022a"
         BINDER_CACHE: true
         PUBLIC_REGISTRY_CHECK: true
