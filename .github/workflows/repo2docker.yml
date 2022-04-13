@@ -8,6 +8,8 @@ jobs:
   binder:
     runs-on: ubuntu-latest
     steps:
+    - name: git workaround
+      run: git config --global --add safe.directory /github/workspace
     - name: Checkout Code
       uses: actions/checkout@main
       with:
