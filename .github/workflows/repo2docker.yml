@@ -8,13 +8,13 @@ jobs:
   binder:
     runs-on: ubuntu-latest
     steps:
-    - name: git workaround
-      run: git config --global --add safe.directory /github/workspace
     - name: Checkout Code
-      uses: actions/checkout@main
+      uses: actions/checkout@v2
       with:
         ref: ${{ github.event.pull_request.head.sha }}
 
+    - name: git workaround
+      run: git config --global --add safe.directory /github/workspace
     - name: update jupyter dependencies with repo2docker
       uses: jupyterhub/repo2docker-action@master
       with:
