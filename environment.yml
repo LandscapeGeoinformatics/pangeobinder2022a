@@ -2,6 +2,7 @@ name: geodask2022a
 channels:
   - conda-forge
 dependencies:
+  - python>=3.8
 # dask jupyter base
   - jupyter
   - jupyterlab
@@ -10,19 +11,19 @@ dependencies:
   - joblib
   - dask-labextension
   - bokeh
-  - jupyter-panel-proxy
+  # - jupyter-panel-proxy
   - ipywidgets
   # core scipy packages
   - numpy
   - scipy
-  - matplotlib
+  - matplotlib-base
   - pandas
   - xarray
   # data science stuff
   - scikit-image
   - scikit-learn
   - dask-ml
-  - xgboost
+  # - xgboost
 # NOTE: pangeo-ml image
   # pyviz
   - holoviews
@@ -32,14 +33,14 @@ dependencies:
   - datashader
   - seaborn
   - altair
-  - descartes
+  # - vega
   - folium
-  - vega
   - ipyleaflet
   - leafmap
   # geospatial
   - shapely
   - cartopy
+  - descartes
   # - basemap
   - geopandas
   - rasterio
@@ -65,12 +66,13 @@ dependencies:
   - pykrige
   - pyinterp
   - xgcm
+  - xarray-spatial
   # intake-related
   - intake
   - intake-xarray
   - fsspec
   - intake-stac
-  - odc-stac
+  - stackstac
   - sentinelsat
   - pystac
   # - sat-stac
@@ -111,6 +113,7 @@ dependencies:
     - spotpy
     - rasterstats
     - pymannkendall
+    - mapclassify
     - git+https://github.com/manaakiwhenua/rhealpixdggs-py.git@master
     - git+https://github.com/allixender/dggrid4py.git@master
    

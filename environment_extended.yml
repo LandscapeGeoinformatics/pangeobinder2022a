@@ -15,7 +15,7 @@ dependencies:
   # core scipy packages
   - numpy
   - scipy
-  - matplotlib
+  - matplotlib-base
   - pandas
   - xarray
   # data science stuff
@@ -70,7 +70,7 @@ dependencies:
   - intake-xarray
   - fsspec
   - intake-stac
-  - odc-stac
+  - stackstac
   - sentinelsat
   - pystac
   # - sat-stac
@@ -123,6 +123,7 @@ dependencies:
     - stsci-rtd-theme
     - sphinxcontrib-bibtex
     - pymannkendall
+    - mapclassifiy
     - git+https://github.com/manaakiwhenua/rhealpixdggs-py.git@master
     - git+https://github.com/allixender/dggrid4py.git@master
     - git+https://github.com/allixender/utgeo_rtd_theme.git@master
