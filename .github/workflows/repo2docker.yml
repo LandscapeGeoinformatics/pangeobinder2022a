@@ -9,12 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email  "github-actions[bot]@users.noreply.github.com"
-        git config --global --add safe.directory /github/workspace
-        git config --global --add safe.directory $(pwd)
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
       with:
         ref: ${{ github.event.pull_request.head.sha }}
         
@@ -24,10 +19,12 @@ jobs:
         git config --global user.email  "github-actions[bot]@users.noreply.github.com"
         git config --global --add safe.directory /github/workspace
         git config --global --add safe.directory $(pwd)
+        sudo chown -R root:root $GITHUB_WORKSPACE
     - uses: jupyterhub/repo2docker-action@master
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        IMAGE_NAME: "allixender/pangeobinder2022a"
+        IMAGE_NAME: "allixender/pangeobinder2022a:latest"
         BINDER_CACHE: true
         PUBLIC_REGISTRY_CHECK: true
+        # https://ghcr.io
