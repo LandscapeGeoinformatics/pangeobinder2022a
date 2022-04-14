@@ -1,9 +1,19 @@
 # conda environment.yml for binder
 
-Python Pangeo-inspired notebooks for teaching and research in Geoinformatics 
+Python Pangeo-inspired notebooks for teaching and research in Geoinformatics and Earth Sciences/ML
 
-https://kodu.ut.ee/~kmoch/
+[Landscape Geoinformatics](https://landscape-geoinformatics.ut.ee) - [Alex Kmoch](https://kodu.ut.ee/~kmoch/)
 
+
+https://mybinder.org/v2/gh/LandscapeGeoinformatics/pangeobinder2022a/HEAD?labpath=index.ipynb
+
+## Docker image local
+
+https://hub.docker.com/r/allixender/pangeobinder2022a/tags
+
+```
+docker pull allixender/pangeobinder2022a:latest
+```
 
 ## License and terms of usage
 
