@@ -73,6 +73,7 @@ dependencies:
   - fsspec
   - intake-stac
   - stackstac
+  # - sentinelsat
   - pystac
   # - sat-stac
   # - sat-search
