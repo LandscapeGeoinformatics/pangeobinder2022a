@@ -14,7 +14,7 @@ dependencies:
   # - jupyter-panel-proxy
   - ipywidgets
   # core scipy packages
-  - numpy
+  - numpy=1.21
   - scipy
   - matplotlib-base
   - pandas
@@ -65,7 +65,7 @@ dependencies:
   - gstools
   - pykrige
   - pyinterp
-  - xgcm
+  # - xgcm
   - xarray-spatial
   # intake-related
   - intake
@@ -73,7 +73,6 @@ dependencies:
   - fsspec
   - intake-stac
   - stackstac
-  - sentinelsat
   - pystac
   # - sat-stac
   # - sat-search
@@ -81,7 +80,7 @@ dependencies:
   - kerchunk
   - pooch
   - xoak
-  - pys2index 
+  - pys2index
   # zarr-related
   - zarr
   - numcodecs
@@ -98,7 +97,7 @@ dependencies:
   - google-auth
   - google-auth-oauthlib
   - pyarrow
-  - fastavro
+  # - fastavro
   - xlrd
   - openpyxl
   - requests
@@ -116,4 +115,3 @@ dependencies:
     - mapclassify
     - git+https://github.com/manaakiwhenua/rhealpixdggs-py.git@master
     - git+https://github.com/allixender/dggrid4py.git@master
-   
