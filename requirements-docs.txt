@@ -1,0 +1,9 @@
+sphinx
+sphinxcontrib
+sphinx_rtd_theme
+stsci-rtd-theme
+pydata-sphinx-theme
+sphinxcontrib-bibtex
+nbconvert
+papermill
+git+https://github.com/allixender/utgeo_rtd_theme.git@master

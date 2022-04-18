@@ -23,8 +23,6 @@ dependencies:
   - scikit-image
   - scikit-learn
   - dask-ml
-  # - xgboost
-# NOTE: pangeo-ml image
   # pyviz
   - holoviews
   - panel
@@ -33,15 +31,12 @@ dependencies:
   - datashader
   - seaborn
   - altair
-  # - vega
   - folium
   - ipyleaflet
   - leafmap
-  # geospatial
   - shapely
   - cartopy
   - descartes
-  # - basemap
   - geopandas
   - rasterio
   - netcdf4
@@ -65,7 +60,7 @@ dependencies:
   - gstools
   - pykrige
   - pyinterp
-  # - xgcm
+  - scikit-gstat
   - xarray-spatial
   # intake-related
   - intake
@@ -73,10 +68,7 @@ dependencies:
   - fsspec
   - intake-stac
   - stackstac
-  # - sentinelsat
   - pystac
-  # - sat-stac
-  # - sat-search
   - rechunker
   - kerchunk
   - pooch
@@ -93,12 +85,7 @@ dependencies:
   # misc
   - gcsfs>=0.5.2
   - s3fs
-  - boto3
-  - google-cloud-storage
-  - google-auth
-  - google-auth-oauthlib
   - pyarrow
-  # - fastavro
   - xlrd
   - openpyxl
   - requests

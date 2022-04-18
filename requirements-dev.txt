@@ -1,0 +1,9 @@
+python-lsp-server
+click
+click-plugins
+psycopg2
+clickhouse-driver
+pydruid
+fastavro
+fastapi
+pytest
